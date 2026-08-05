@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>말씀길 — 맥락과 의미로 찾는 성경</title>
-<meta name="description" content="말씀길은 인터넷 없이 동작하는 iPhone·iPad 성경 앱입니다. 단어가 아니라 장면과 의미로 말씀을 찾습니다.">
+<title>말씀길 — 오프라인 성경 묵상</title>
+<meta name="description" content="말씀길 — 인터넷 없이 읽고, 찾고, 기록하는 성경 앱. 콜로폰랩스.">
 <style>
   :root{
     --paper:#F7F6F2; --ink:#22262B; --jjok:#33527A;
@@ -16,100 +16,34 @@
     font-family:-apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
       "Malgun Gothic", "Noto Sans KR", sans-serif;
     color:var(--ink); font-size:17px; line-height:1.75;
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
     -webkit-font-smoothing:antialiased;
   }
-  .page{max-width:42rem; margin:0 auto; padding:4rem 1.5rem 5rem}
-  header{margin-bottom:3.5rem}
-  .brand{
-    display:block; color:var(--jjok);
-    font-size:.85rem; font-weight:700; letter-spacing:.35em; margin-bottom:1.25rem;
+  .card{max-width:26rem; padding:2rem 1.5rem; text-align:center}
+  .brand{color:var(--jjok); font-size:.85rem; font-weight:700; letter-spacing:.35em; margin-bottom:1.25rem}
+  h1{font-size:2.2rem; font-weight:800; letter-spacing:-.02em}
+  .tag{margin-top:.75rem; color:var(--muted)}
+  .divider{width:2px; height:3rem; background:var(--hair); margin:2rem auto}
+  nav a{
+    display:block; padding:.9rem 1rem; margin-top:.75rem;
+    border:1px solid var(--hair); border-radius:8px; background:#FFF;
+    color:var(--ink); text-decoration:none; font-weight:600;
   }
-  h1{font-size:2.1rem; font-weight:800; letter-spacing:-.02em; line-height:1.3}
-  .lede{
-    margin-top:2rem; padding:1.25rem 1.4rem;
-    border:1px solid var(--hair); border-left:3px solid var(--jjok);
-    background:#FFFFFF; border-radius:0 8px 8px 0;
-    font-size:1.05rem; font-weight:600;
-  }
-  .path{position:relative; margin-top:3rem; padding-left:1.75rem}
-  .path::before{
-    content:""; position:absolute; left:5px; top:.6rem; bottom:.4rem;
-    width:2px; background:var(--hair);
-  }
-  section{position:relative; padding-bottom:2.75rem}
-  section:last-child{padding-bottom:0}
-  section::before{
-    content:""; position:absolute; left:calc(-1.75rem + 1px); top:.5rem;
-    width:10px; height:10px; background:var(--jjok);
-    border:2px solid var(--paper); border-radius:2px;
-  }
-  h2{font-size:1.15rem; font-weight:800; letter-spacing:-.01em; margin-bottom:.75rem}
-  p + p{margin-top:.75rem}
-  ul{margin:.75rem 0 0 1.2rem}
-  li + li{margin-top:.4rem}
-  strong{font-weight:700}
-  a{color:var(--jjok); text-underline-offset:3px}
-  .quote{color:var(--muted); font-style:italic}
-  .note{color:var(--muted); font-size:.9rem; margin-top:.75rem}
-  footer{
-    margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--hair);
-    color:var(--muted); font-size:.85rem;
-  }
-  footer p + p{margin-top:.5rem}
-  nav.foot{margin-top:.75rem}
-  nav.foot a{margin-right:1.25rem}
+  nav a:hover{border-color:var(--jjok); color:var(--jjok)}
+  footer{margin-top:2.5rem; color:var(--muted); font-size:.85rem}
 </style>
 </head>
 <body>
-<div class="page">
-
-<header>
-  <span class="brand">말씀길</span>
-  <h1>맥락과 의미로 찾는 성경</h1>
-  <p class="lede">구절이 정확히 기억나지 않아도 괜찮습니다. <span class="quote">‘양을 위해 목숨을 버리는 목자’</span>처럼 떠오르는 대로 물으면, 말씀길이 그 장면을 찾아 줍니다. 모두 인터넷 없이, 기기 안에서.</p>
-</header>
-
-<div class="path">
-
-<section>
-  <h2>세 가지로 찾습니다</h2>
-  <ul>
-    <li><strong>단어로</strong> — 본문에 있는 표현 그대로</li>
-    <li><strong>확장</strong> — 형태가 바뀐 말과 비슷한 말까지 넓혀서</li>
-    <li><strong>뜻으로</strong> — 문장의 의미로. 자연어로 물어도 찾습니다</li>
-  </ul>
-</section>
-
-<section>
-  <h2>읽고, 남기고, 이어 봅니다</h2>
-  <ul>
-    <li>성경 66권 본문과 히브리어·헬라어 원문, 여러 영어 번역 대조</li>
-    <li>장 칼빈 성경주석 전권(한국어 번역)을 절마다 붙여 읽기</li>
-    <li>인물·장소·사건을 잇는 관계도</li>
-    <li>북마크·메모·묵상(QT) 저널과 ‘나의 말씀 지도’</li>
-    <li>읽기 진도와 통독 회차, 목회자를 위한 설교 노트와 강단 라이브 모드</li>
-  </ul>
-</section>
-
-<section>
-  <h2>수집하지 않습니다</h2>
-  <p>계정도, 로그인도, 광고도, 분석 도구도 없습니다. 남기신 기록은 기기 안에만 있고 개발자는 볼 수 없습니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>에 적었습니다.</p>
-</section>
-
-<section>
-  <h2>도움이 필요하면</h2>
-  <p><a href="support.html">지원 페이지</a>에 자주 묻는 질문을 모아 두었습니다. 답을 찾지 못하셨다면 <a href="mailto:colophonlabs@gmail.com">colophonlabs@gmail.com</a>로 보내 주세요.</p>
-  <p class="note">말씀길은 현재 출시를 준비하고 있습니다. App Store 공개 후 이곳에 내려받기 링크를 올립니다.</p>
-</section>
-
-</div><!-- /.path -->
-
-<footer>
-  <p>© 콜로폰랩스(Colophon Labs). 말씀길.</p>
-  <p>『성경전서 개역개정판』의 저작권은 재단법인 대한성서공회 소유입니다.</p>
-  <nav class="foot"><a href="privacy.html">개인정보처리방침</a><a href="support.html">지원</a></nav>
-</footer>
-
-</div>
+<main class="card">
+  <p class="brand">COLOPHON LABS</p>
+  <h1>말씀길</h1>
+  <p class="tag">인터넷 없이 읽고, 찾고, 기록하는 성경 앱</p>
+  <div class="divider" aria-hidden="true"></div>
+  <nav>
+    <a href="support.html">지원 · 자주 묻는 질문</a>
+    <a href="privacy.html">개인정보처리방침</a>
+  </nav>
+  <footer>© 콜로폰랩스(Colophon Labs)</footer>
+</main>
 </body>
 </html>
