@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지원 — 말씀길</title>
+<meta name="description" content="말씀길 앱 사용 중 자주 묻는 질문과 문의 방법.">
+<style>
+  :root{
+    --paper:#F7F6F2; --ink:#22262B; --jjok:#33527A;
+    --muted:#6E6A61; --hair:#E4E1D8;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{background:var(--paper)}
+  body{
+    font-family:-apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+      "Malgun Gothic", "Noto Sans KR", sans-serif;
+    color:var(--ink); font-size:17px; line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{max-width:42rem; margin:0 auto; padding:4rem 1.5rem 5rem}
+  header{margin-bottom:3.5rem}
+  .brand{
+    display:block; text-decoration:none; color:var(--jjok);
+    font-size:.85rem; font-weight:700; letter-spacing:.35em; margin-bottom:1.25rem;
+  }
+  h1{font-size:1.9rem; font-weight:800; letter-spacing:-.02em; line-height:1.3}
+  .lede{
+    margin-top:2rem; padding:1.25rem 1.4rem;
+    border:1px solid var(--hair); border-left:3px solid var(--jjok);
+    background:#FFFFFF; border-radius:0 8px 8px 0;
+    font-size:1.05rem; font-weight:600;
+  }
+  .lede a{color:var(--jjok)}
+  /* '길' — 질문을 잇는 좌측 이정표 라인 */
+  .path{position:relative; margin-top:3rem; padding-left:1.75rem}
+  .path::before{
+    content:""; position:absolute; left:5px; top:.6rem; bottom:.4rem;
+    width:2px; background:var(--hair);
+  }
+  section{position:relative; padding-bottom:2.75rem}
+  section:last-child{padding-bottom:0}
+  section::before{
+    content:""; position:absolute; left:calc(-1.75rem + 1px); top:.5rem;
+    width:10px; height:10px; background:var(--jjok);
+    border:2px solid var(--paper); border-radius:2px;
+  }
+  h2{font-size:1.15rem; font-weight:800; letter-spacing:-.01em; margin-bottom:.75rem}
+  p + p{margin-top:.75rem}
+  ol, ul{margin:.75rem 0 0 1.2rem}
+  li + li{margin-top:.4rem}
+  strong{font-weight:700}
+  a{color:var(--jjok); text-underline-offset:3px}
+  .kbd{
+    display:inline-block; padding:0 .45em; border:1px solid var(--hair);
+    border-radius:5px; background:#FFF; font-size:.92em; white-space:nowrap;
+  }
+  .note{color:var(--muted); font-size:.9rem; margin-top:.75rem}
+  footer{
+    margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--hair);
+    color:var(--muted); font-size:.85rem;
+  }
+  footer p + p{margin-top:.5rem}
+  nav.foot{margin-top:.75rem}
+  nav.foot a{margin-right:1.25rem}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <a class="brand" href="index.html">말씀길</a>
+  <h1>말씀길 지원</h1>
+  <p class="lede">궁금한 점이 있으신가요? 아래에서 답을 찾지 못하셨다면 <a href="mailto:colophonlabs@gmail.com">colophonlabs@gmail.com</a>로 편하게 보내 주세요. 확인하는 대로 답장드립니다.</p>
+</header>
+
+<div class="path">
+
+<section>
+  <h2>인터넷이 없어도 되나요?</h2>
+  <p>네. 말씀길은 완전한 오프라인 앱입니다. 본문 읽기, 검색, 관계도, 메모와 설교 노트까지 모두 인터넷 없이 동작합니다. 연결이 필요한 것은 프리미엄 구매, iCloud 백업, 강해 자료 팩 내려받기뿐입니다.</p>
+</section>
+
+<section>
+  <h2>앱 용량이 큰 이유</h2>
+  <p>성경 전체 본문, 원어 자료, 검색 색인을 기기 안에 담아 두기 때문입니다. 그 대가로 산속 기도원에서도, 비행기 안에서도 모든 기능이 그대로 동작합니다. Wi-Fi에서 설치하시는 것을 권합니다.</p>
+</section>
+
+<section>
+  <h2>내 기록을 백업하려면</h2>
+  <p>기록(메모·북마크·묵상·설교 노트·읽기 기록 등)은 기기 안에 저장되며, <span class="kbd">설정 ▸ 내 데이터</span>에서 두 가지 방법으로 지킬 수 있습니다.</p>
+  <ol>
+    <li><strong>자동 백업</strong> — 켜 두면 하루 한 번, 기록이 바뀌었을 때만 사용자 본인의 iCloud Drive에 저장됩니다(iCloud를 쓸 수 없으면 기기 안에 보관하고 그 사실을 표시합니다). 실수로 지웠을 때는 <strong>백업에서 되돌리기</strong>로 시점을 골라 복구합니다.</li>
+    <li><strong>파일로 내보내기</strong> — CSV 파일 하나로 내보내고, 새 기기에서 <strong>파일에서 복원</strong>으로 불러옵니다.</li>
+  </ol>
+  <p class="note">백업·복원은 프리미엄 기능입니다. 기기를 바꾸기 전에는 꼭 한 번 내보내기를 해 두시길 권합니다 — 앱은 클라우드 동기화를 하지 않습니다.</p>
+</section>
+
+<section>
+  <h2>구매한 프리미엄을 복원하려면</h2>
+  <p>새 기기이거나 앱을 다시 설치한 경우, <span class="kbd">설정 ▸ 프리미엄</span>에서 <strong>구매 복원</strong>을 누르세요. 구매하실 때 사용한 Apple 계정으로 로그인되어 있어야 합니다.</p>
+</section>
+
+<section>
+  <h2>받은 코드를 사용하려면</h2>
+  <p>프리미엄 코드를 선물받으셨다면 두 방법 중 편한 쪽을 쓰시면 됩니다.</p>
+  <ol>
+    <li>문자나 카카오톡으로 받은 <strong>링크를 누르면</strong> 바로 사용 화면이 열립니다.</li>
+    <li>앱에서 <span class="kbd">설정 ▸ 프리미엄 ▸ 보유한 코드 사용</span>을 눌러 코드를 입력합니다.</li>
+  </ol>
+  <p class="note">코드는 한 번만 사용할 수 있으니, 본인 Apple 계정으로 로그인된 상태에서 사용해 주세요.</p>
+</section>
+
+<section>
+  <h2>강해 자료가 보이지 않아요</h2>
+  <p>성경 강해(칼빈 주석)는 <strong>창세기·마태복음을 무료로</strong> 볼 수 있고, <strong>66권 전권은 프리미엄</strong>입니다. 전권은 앱 용량을 줄이기 위해 처음 설치에 포함하지 않으므로, <span class="kbd">설정 ▸ 성경 강해</span>에서 <strong>‘추가’로 내려받은 뒤 스위치를 켜</strong> 사용합니다. Wi-Fi에서 내려받기가 끝날 때까지 기다려 주세요. 받은 뒤에는 인터넷 없이 볼 수 있습니다.</p>
+  <p class="note">구독이 끝나면 다시 창세기·마태복음만 보이지만, 내려받은 자료는 지워지지 않아 재구독하면 곧바로 다시 열립니다.</p>
+</section>
+
+<section>
+  <h2>환불을 받고 싶어요</h2>
+  <p>인앱결제의 환불은 Apple이 직접 처리합니다. <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>에 구매한 Apple 계정으로 로그인해 해당 구매의 ‘문제 신고’를 진행하시면 됩니다. 구독 해지는 <span class="kbd">iOS 설정 ▸ 본인 이름 ▸ 구독</span>에서 언제든 할 수 있습니다.</p>
+</section>
+
+<section>
+  <h2>기능 제안이나 오류 제보</h2>
+  <p>사용 중 이상한 점, 있었으면 하는 기능은 <a href="mailto:colophonlabs@gmail.com">colophonlabs@gmail.com</a>로 보내 주세요. 오류 제보에는 <strong>기기 종류와 iOS 버전, 어떤 화면에서 무엇을 했는지</strong>를 함께 적어 주시면 훨씬 빨리 해결됩니다.</p>
+  <p class="note">말씀길은 사용 기록을 수집하지 않기 때문에, 보내 주시는 제보가 앱을 좋게 만드는 거의 유일한 길입니다. 앱의 <span class="kbd">도움말 ▸ 문의하기</span>를 쓰면 앱 버전과 기기 정보가 메일 초안에 자동으로 담깁니다.</p>
+</section>
+
+</div><!-- /.path -->
+
+<footer>
+  <p>개인정보 처리에 대한 내용은 <a href="privacy.html">개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+  <p>© 콜로폰랩스(Colophon Labs). 말씀길.</p>
+  <nav class="foot"><a href="index.html">홈</a><a href="privacy.html">개인정보처리방침</a></nav>
+</footer>
+
+</div>
+</body>
+</html>
