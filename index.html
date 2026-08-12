@@ -4,43 +4,62 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>콜로폰랩스 — Colophon Labs</title>
-<meta name="description" content="콜로폰랩스는 인터넷 없이 기기 안에서 동작하는 도구를 만듭니다. 첫 제품은 성경 앱 '성경갈피'입니다.">
+<meta name="description" content="콜로폰랩스는 서버에 이용자의 정보를 모으는 서비스가 아니라, 이용자의 기기 안에서 완결되는 도구를 만드는 1인 소프트웨어 개발사입니다. 첫 제품은 성경 앱 '성경갈피'입니다.">
 <style>
   :root{
     --paper:#F7F6F2; --ink:#22262B; --jjok:#33527A; --gold:#C9A227;
-    --muted:#6E6A61; --hair:#E4E1D8;
+    --muted:#6E6A61; --hair:#E4E1D8; --card:#FFF;
   }
   *{box-sizing:border-box; margin:0; padding:0}
   html{background:var(--paper)}
   body{
     font-family:-apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
       "Malgun Gothic", "Noto Sans KR", sans-serif;
-    color:var(--ink); font-size:17px; line-height:1.75;
+    color:var(--ink); font-size:17px; line-height:1.8;
     -webkit-font-smoothing:antialiased;
   }
-  main{max-width:34rem; margin:0 auto; padding:4rem 1.5rem 3rem}
+  main{max-width:36rem; margin:0 auto; padding:4rem 1.5rem 3rem}
+
   .brand{color:var(--jjok); font-size:.85rem; font-weight:700; letter-spacing:.35em}
-  h1{font-size:2rem; font-weight:800; letter-spacing:-.02em; margin-top:1.25rem}
-  .tag{margin-top:.75rem; color:var(--muted)}
-  .about{margin-top:1.5rem}
-  .divider{width:2px; height:2.5rem; background:var(--hair); margin:2.5rem 0}
-  h2{font-size:.8rem; font-weight:700; letter-spacing:.2em; color:var(--muted)}
+  h1{font-size:2.1rem; font-weight:800; letter-spacing:-.02em; margin-top:1.1rem}
+  .tag{margin-top:.8rem; color:var(--muted)}
+
+  section{margin-top:3rem}
+  h2{
+    font-size:.78rem; font-weight:700; letter-spacing:.2em; color:var(--muted);
+    padding-bottom:.6rem; border-bottom:1px solid var(--hair);
+  }
+  section p{margin-top:1.1rem}
+  .lead{font-size:1.02rem}
+  em{font-style:normal; color:var(--jjok); font-weight:600}
+
+  ul.caps{margin-top:1.1rem; list-style:none}
+  ul.caps li{margin-top:1rem; padding-left:1rem; border-left:2px solid var(--hair)}
+  ul.caps b{display:block; font-weight:700}
+  ul.caps span{color:var(--muted); font-size:.95rem; line-height:1.7}
+
   .product{
-    display:block; margin-top:1rem; padding:1.25rem 1.4rem;
+    display:block; margin-top:1.2rem; padding:1.3rem 1.4rem;
     border:1px solid var(--hair); border-left:4px solid var(--gold); border-radius:10px;
-    background:#FFF; color:var(--ink); text-decoration:none;
+    background:var(--card); color:var(--ink); text-decoration:none;
   }
   .product:hover{border-color:var(--jjok); border-left-color:var(--gold)}
-  .product .name{font-size:1.15rem; font-weight:700}
-  .product .desc{margin-top:.35rem; color:var(--muted); font-size:.95rem; line-height:1.6}
-  .product .more{margin-top:.6rem; color:var(--jjok); font-size:.9rem; font-weight:600}
-  .next{margin-top:1.5rem; color:var(--muted); font-size:.92rem}
-  footer{margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--hair);
-         color:var(--muted); font-size:.85rem}
+  .product .name{font-size:1.2rem; font-weight:800}
+  .product .kind{margin-top:.15rem; color:var(--muted); font-size:.88rem}
+  .product .desc{margin-top:.7rem; color:var(--muted); font-size:.95rem; line-height:1.7}
+  .product .more{margin-top:.8rem; color:var(--jjok); font-size:.9rem; font-weight:700}
+  .sub{margin-top:.9rem; display:flex; flex-wrap:wrap; gap:.5rem}
+  .sub a{
+    padding:.4rem .8rem; border:1px solid var(--hair); border-radius:999px;
+    background:var(--card); color:var(--muted); font-size:.87rem; text-decoration:none;
+  }
+  .sub a:hover{border-color:var(--jjok); color:var(--jjok)}
+
+  footer{margin-top:3.5rem; padding-top:1.5rem; border-top:1px solid var(--hair);
+         color:var(--muted); font-size:.85rem; line-height:1.9}
   footer a{color:var(--muted)}
   @media (prefers-color-scheme: dark){
-    :root{--paper:#181A1D; --ink:#E9E6DF; --jjok:#8FB0DA; --muted:#9A968D; --hair:#2E3237}
-    .product{background:#212429}
+    :root{--paper:#181A1D; --ink:#E9E6DF; --jjok:#8FB0DA; --muted:#9A968D; --hair:#2E3237; --card:#212429}
   }
 </style>
 </head>
@@ -48,28 +67,60 @@
 <main>
   <p class="brand">COLOPHON LABS</p>
   <h1>콜로폰랩스</h1>
-  <p class="tag">기기 안에서 끝나는 도구를 만듭니다.</p>
+  <p class="tag">기기 안에서 완결되는 도구를 만듭니다.</p>
 
-  <p class="about">
-    자료를 서버로 보내지 않고, 계정을 요구하지 않으며, 인터넷이 끊긴 자리에서도
-    똑같이 동작하는 소프트웨어를 만듭니다. 읽고 찾고 기록하는 일이
-    남의 서버가 아니라 <strong>내 기기 안에서</strong> 끝나야 한다고 믿기 때문입니다.
-  </p>
+  <section>
+    <h2>이름의 뜻</h2>
+    <p><em>콜로폰(colophon)</em>은 책의 맨 끝에 붙는 간기(刊記) — 그 책을 누가, 언제, 어떻게
+       만들었는지 밝히는 짧은 기록입니다. 화려한 표지가 아니라 마지막 장에서 만든 이의 책임을
+       조용히 밝히는 자리입니다.</p>
+    <p>콜로폰랩스는 이 이름처럼, 앞에 나서기보다 <strong>좋은 책이 독자에게 바르게 전달되도록
+       뒷자리에서 도구를 만드는 회사</strong>가 되고자 합니다.</p>
+  </section>
 
-  <div class="divider" aria-hidden="true"></div>
+  <section>
+    <h2>하는 일</h2>
+    <p class="lead">1인 소프트웨어 개발사입니다. 서버에 이용자의 정보를 모으는 서비스가 아니라,
+       <strong>이용자의 기기 안에서 완결되는 도구</strong>를 만듭니다.</p>
+    <p>첫 제품인 성경 앱 ‘성경갈피’가 그 원칙을 그대로 담고 있습니다 — 계정도, 광고도,
+       이용 기록 수집도 없이 본문 읽기부터 검색과 묵상 기록까지 전부 기기 안에서 동작합니다.</p>
+    <p>같은 원칙 위에서 <strong>개인용 PC 소프트웨어와 업무용 도구</strong>로 만드는 것을 넓혀 갑니다.</p>
+  </section>
 
-  <h2>제품</h2>
-  <a class="product" href="galpi/">
-    <span class="name">성경갈피</span>
-    <span class="desc">장과 절을 몰라도 뜻으로 찾아 주는 성경 앱.
-      본문·주석·검색을 모두 기기 안에 담아 인터넷 없이 동작합니다. iPhone · iPad.</span>
-    <span class="more">자세히 보기 →</span>
-  </a>
-  <p class="next">개인용 PC 버전과 업무용 도구를 준비하고 있습니다.</p>
+  <section>
+    <h2>기술 역량</h2>
+    <p>성경갈피에 실제로 적용한 기술이 곧 회사의 역량입니다.</p>
+    <ul class="caps">
+      <li><b>온디바이스 의미 검색</b>
+        <span>문장의 뜻으로 찾는 검색 엔진을 서버 없이 기기 안에서 동작하도록 구현했습니다
+          (한국어 형태소 분석 + 자체 학습 임베딩 모델).</span></li>
+      <li><b>대용량 오프라인 콘텐츠 처리</b>
+        <span>성경 전문·원어 대조·주석을 포함한 색인 데이터베이스를 모바일 기기에 맞게 최적화했습니다.</span></li>
+      <li><b>개인정보 무수집 설계</b>
+        <span>App Store 개인정보 라벨 ‘데이터가 수집되지 않음’ 기준을 충족합니다.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>첫 제품</h2>
+    <a class="product" href="galpi/">
+      <span class="name">성경갈피</span>
+      <span class="kind">맥락·의미로 찾는 성경 · iPhone · iPad 앱</span>
+      <span class="desc">완전 오프라인 · 의미 기반 검색 · 칼빈 주석 · 묵상(QT) 기록 ·
+        원어 대조 · 통독 관리. 앱과 성경 본문은 무료이고 부가 기능만 프리미엄입니다.</span>
+      <span class="more">제품 소개 보기 →</span>
+    </a>
+    <div class="sub">
+      <a href="galpi/features.html">화면으로 보는 성경갈피</a>
+      <a href="galpi/support.html">지원 · 자주 묻는 질문</a>
+      <a href="galpi/privacy.html">개인정보처리방침</a>
+    </div>
+  </section>
 
   <footer>
-    © 2026 콜로폰랩스(Colophon Labs) ·
-    <a href="mailto:colophonlabs@gmail.com">colophonlabs@gmail.com</a>
+    콜로폰랩스(Colophon Labs) · 응용 소프트웨어 개발·공급<br>
+    <a href="mailto:colophonlabs@gmail.com">colophonlabs@gmail.com</a><br>
+    © 2026 Colophon Labs
   </footer>
 </main>
 </body>
